@@ -19,6 +19,9 @@ electron .
 ### Windows
 * スクロールバーのために，URLの画面がほぼ見えない状態となる
 
+### release 0.0.1
+* `ctrl`+`-`,`+`などの拡大縮小の操作ができない(自前ビルドでは可能)
+
 ## NOTE
 ### cross platform build
 ```
