@@ -21,6 +21,8 @@ electron .
 
 ### release 0.0.1
 * `ctrl`+`-`,`+`などの拡大縮小の操作ができない(自前ビルドでは可能)
+  * [Electronで展示物用アプリケーションを作る際のテクニックまとめ \- Qiita]( https://qiita.com/kgsi/items/075775de7ed574481242 )
+    * > 通常HTMLはviewportを設定しなければ表示の拡大縮小ができます。
 
 ## NOTE
 ### cross platform build
