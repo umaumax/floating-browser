@@ -15,6 +15,10 @@ npm install
 electron .
 ```
 
+## Bug
+### Windows
+* スクロールバーのために，URLの画面がほぼ見えない状態となる
+
 ## NOTE
 ### cross platform build
 ```
