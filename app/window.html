@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; style-src 'self' 'unsafe-inline';">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0">
+    <title>Electron Floating Web Browser</title>
+    <link rel="stylesheet" href="window.css">
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <script src="window.js" charset="utf-8"></script>
+    <!-- <script src="bootstrap.min.js" charset="utf-8"></script> -->
+</head>
+
+<body>
+    <div id="window">
+        <webview id="header-frame"></webview>
+        <div id="button-container">
+            <button type="button" class="url-button btn btn-primary  btn-sm py-0" data-url="http://maruta.github.io/timekeeper/#t1=2:00&t2=3:00&t3=4:00&m=Click%20to%20edit%20this%20message.">
+            3min
+        </button>
+            <button type="button" class="url-button btn btn-primary  btn-sm py-0" data-url="http://maruta.github.io/timekeeper/#t1=4:00&t2=5:00&t3=6:00&m=Click%20to%20edit%20this%20message.">
+            5min
+        </button>
+            <button type="button" class="url-button btn btn-primary  btn-sm py-0" data-url="http://maruta.github.io/timekeeper/#t1=8:00&t2=10:00&t3=12:00&m=Click%20to%20edit%20this%20message.">
+            10min
+        </button>
+            <button type="button" class="url-button btn btn-primary  btn-sm py-0" data-url="http://maruta.github.io/timekeeper/#t1=13:00&t2=15:00&t3=18:00&m=Click%20to%20edit%20this%20message.">
+            15min
+        </button>
+            <button type="button" class="url-button btn btn-primary  btn-sm py-0" data-url="http://maruta.github.io/timekeeper/#t1=15:00&t2=20:00&t3=25:00&m=Click%20to%20edit%20this%20message.">
+            20min
+        </button>
+            <button type="button" class="url-button btn btn-primary  btn-sm py-0" data-url="http://maruta.github.io/timekeeper/#t1=25:00&t2=30:00&t3=35:00&m=Click%20to%20edit%20this%20message.">
+            30min
+        </button>
+            <button type="button" class="url-button btn btn-primary  btn-sm py-0" data-url="http://maruta.github.io/timekeeper/#t1=40:00&t2=45:00&t3=50:00&m=Click%20to%20edit%20this%20message.">
+            45min
+        </button>
+            <button type="button" class="url-button btn btn-primary  btn-sm py-0" data-url="http://maruta.github.io/timekeeper/#t1=55:00&t2=60:00&t3=65:00&m=Click%20to%20edit%20this%20message.">
+            60min
+        </button>
+        </div>
+        <div id="view-container">
+            <webview id="view" preload="preload.js"></webview>
+        </div>
+    </div>
+</body>
+
+</html>
