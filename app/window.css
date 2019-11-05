@@ -9,25 +9,26 @@ body,
 #window {
     width: 100%;
     height: 100%;
+    background-color: black;
 }
 
 #header-frame {
     width: 100%;
-    height: 18pt;
+    height: 40px;
+    background-color: black;
 }
 
 #header {
     width: 100%;
-    background-color: black;
-}
-
-.cp_iptxt {
-    position: relative;
-    border: 2px solid darkgrey;
-    width: calc(100% - 2px);
+    line-height: 0;
+    /* hide scrollbar */
+    overflow: hidden;
+    overflow-x: hidden;
+    overflow-y: hidden;
 }
 
 .cp_iptxt input[type='text'] {
+    font-size: 10px;
     box-sizing: border-box;
     width: 100%;
     margin: 1px padding: 0.1em;
@@ -38,7 +39,12 @@ body,
     border-radius: 2px;
 }
 
-.ef input[type='text']:focus {
+label.ef {
+    width: 100%;
+    height: 0px;
+}
+
+label.ef input[type='text']:focus {
     border: 1px solid #da3c41;
     outline: none;
     box-shadow: 0 0 5px 1px rgba(60, 218, 65, 0.75);
@@ -50,15 +56,20 @@ body,
 #button-container {
     background-color: black;
     text-align: center;
+    line-height: 2.3;
 }
 
 #view-container {
-    background-color: black;
     width: 100%;
     height: calc(100% - 22pt);
+    overflow: scroll;
 }
 
 #view {
     width: 100%;
     height: 100%;
+    /* hide scrollbar */
+    overflow: hidden;
+    overflow-x: hidden;
+    overflow-y: hidden;
 }

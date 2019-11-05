@@ -12,21 +12,18 @@ window.addEventListener('load', () => {
     headerFrame.src = 'header.html';
     headerFrame.addEventListener('did-finish-load', Initialize, false);
     headerFrame.addEventListener('ipc-message', (event) => {
+        console.log('[host][ipc-message]', event)
         if ('url-input' === event.channel) {
-            webview.setAttribute('src', event.args[0]);
-        }
-    });
-
-    const buttons = document.querySelectorAll('.url-button');
-    buttons.forEach((button) => {
-        button.addEventListener('click', function(clickEvent) {
-            var url = this.getAttribute('data-url');
+            var url = event.args[0];
+            webview.setAttribute('src', url);
+        } else if ('click-button' === event.channel) {
+            var url = event.args[0];
             // NOTE: only set
             headerFrame.send('url-input', url);
             // NOTE: goto the page
             webview.setAttribute('src', url);
-        });
-    })
+        }
+    });
 }, false);
 
 function Initialize() {
