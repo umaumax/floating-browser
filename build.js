@@ -7,7 +7,7 @@ const packagejson = JSON.parse(fs.readFileSync('./package.json', 'utf8'));
 
 const ArgumentParser = require('argparse').ArgumentParser;
 var parser = new ArgumentParser({
-    version: '0.0.1',
+    version: '0.0.2',
     addHelp: true,
     description: 'build app'
 });
