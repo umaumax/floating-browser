@@ -10,8 +10,7 @@
   "author": "umaumax",
   "license": "MIT",
   "dependencies": {
-    "argparse": "^1.0.9",
-    "moment": "^2.13.0"
+    "argparse": "^1.0.9"
   },
   "devDependencies": {
     "electron": "^1.4.10",
